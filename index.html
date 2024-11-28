@@ -3,10 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Minji Kim</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
+    <style>
+        /* General Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #eaeaea;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #555555;
+            transform: scale(1.05);
+        }
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 3em 1em;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555555;
+        }
+        /* Content Section */
+        .content {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f8f8f8;
+            border-top: 1px solid #eaeaea;
+            color: #555555;
+        }
+    </style>
 </head>
 <body>
-    <h1>Personal Website</h1>
-    <p>This is a simple personal website hosted on GitHub Pages.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="thoughts.html">Thoughts</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <section id="about">
+            <h2>About</h2>
+            <p>hello! i’m minji. i’m a high school student living in seoul, south korea, 
+                and i find writing in all lowercase very aesthetically pleasing (but i know this depends on the person, 
+                so it’s only my about page that’s going to be formatted like this).</p>
+            <p>my life revolves around school at the moment, but i'm trying to do some interesting things on the side. 
+                right now my primary interests are cs, philosophy, and econ, and i would like to learn more environmental science.</p>
+            <p>honestly though, i consider myself more of a hobbyist than anything else, so my hobbies are reading, music, running, 
+                movies/tv shows, and taking random pictures of cool things (it used to be pictures of the sky but has shifted over time). 
+                and writing this blog i guess. my recommendations related to some of these are <a href="recommendations.html">here</a>.</p>
+            <p>where you might know me from:<br/>-stanford online high school<br/>-random online courses<br/>-fabric alum (pair '24!)<br/>
+                -non-trivial<br/>-school? (probably not)</p>
+            <p><a href="rss.xml" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg" alt="RSS Feed" style="width: 24px; height: 24px;">
+                    subscribe to my rss feed!</a> and feel free to <a href = "contact.html">reach out</a>!
+            </a></p>
+            <p>gpt 4o created the website template for me, which is kinda cool! it's good at creating minimalist templates.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p></p>
+    </footer>
 </body>
 </html>
