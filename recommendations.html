@@ -118,6 +118,31 @@
                 padding: 0 1em;
             }
         }
+
+        .text-navigation {
+            margin-bottom: 2em;
+            max-width: 800px;
+            margin: 0 auto 2em auto;
+            padding: 0 1em;
+        }
+
+        .text-navigation a {
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+
+        .text-navigation a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f8f8f8;
+            border-top: 1px solid #eaeaea;
+            color: #555555;
+        }
     </style>
 </head>
 <body>
@@ -131,13 +156,54 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    
+    <div class="text-navigation"><br>
+        <h2>Recommendations</h2>
+        <a href="#currently-reading">Currently Reading</a><br>
+        <a href="#books">Books</a><br>
+        <a href="#movies">Movies</a><br>
+        <a href="#shows">Shows</a><br>
+    </div>
 
     <!-- Main Content -->
     <div class="content">
-        <section id="about">
-            <h2>Recommendations</h2>
-            
-        </section>
+        <section id="currently-reading">
+            <h3>Currently Reading</h3>
+            <p>The ever-expanding list of books I am currently reading (i.e. unfinished books)</p>
+            <ul>
+                <li><strong>Never Let Me Go</strong> by Kazuo Ishiguro</li>
+                <li><strong>The Remains of the Day</strong> by Kazuo Ishiguro</li>
+                <li><strong>Human Acts</strong> by Han Kang</li>
+                <li><strong>Atonement</strong> by Ian McEwan</li>
+                <li><strong>My Brilliant Friend</strong> by Elena Ferrante</li>
+                <li><strong>The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America</strong> by Erik Larson</li>
+            </ul>
+        </section><br>
+
+        <section id="books">
+            <h3>Books</h3>
+            <p>Good books that I like</p>
+            <ul>
+            </ul>
+        </section><br>
+
+        <section id="movies">
+            <h3>Movies</h3>
+            <p></p>
+            <ul>
+            </ul>
+        </section><br>
+
+        <section id="shows">
+            <h3>Shows</h3>
+            <p>Across many countries and genres</p>
+            <ul>
+                <li><strong>Stranger Things</strong> - no explanation needed</li>
+                <li><strong>Detective L</strong> - a historical mystery Chinese drama set in Shanghai in the 1930s that I watched ~3 times, 
+                    much different from the cliche romance-esque plot most Chinese shows follow</li>
+                <li><strong>Extraordinary Attorney Woo</strong> - the right balance between comedy, law, romance, and social issues</li>
+            </ul>
+        </section><br>
     </div>
 
     <!-- Footer -->
