@@ -5,7 +5,7 @@
         <link>https://minji0925.github.io</link>
         <description>Latest updates from Minji's Personal Website</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 28 Nov 2024 10:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 10 Jan 2025 10:00:00 +0000</lastBuildDate>
 
         <item>
             <title>About page</title>
@@ -14,7 +14,15 @@
             <pubDate>Thu, 28 Nov 2024 10:00:00 +0000</pubDate>
             <guid>https://minji0925.github.io/index.html</guid>
         </item>
+
+        <item>
+            <title>Squid Game 2 Review</title>
+            <link>https://minji0925.github.io/squidgame2.html</link>
+            <description>Squid Game 2 Review</description>
+            <pubDate>Fri, 10 Jan 2025 10:00:00 +0000</pubDate>
+            <guid>https://minji0925.github.io/squidgame2.html</guid>
+        </item>
         
-        <lastBuildDate>Thu, 28 Nov 2024 12:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 10 Jan 2025 12:00:00 +0000</lastBuildDate>
     </channel>
 </rss>
