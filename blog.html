@@ -8,7 +8,7 @@
     <style>
         /* General Styles */
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+        
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
@@ -53,13 +53,38 @@
             padding: 0 1em;
         }
 
-        h1 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
+        .review-list {
+            list-style: none;
+            padding: 0;
         }
 
-        p {
-            margin: 1em 0;
+        .review-item {
+            margin-bottom: 1.5em;
+            padding: 1em;
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .review-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-item a {
+            text-decoration: none;
+            color: #555555;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .review-item a:hover {
+            color: #0056b3;
+        }
+
+        .review-item p {
+            margin: 0.5em 0 0;
+            color: #555555;
+            font-size: 0.9em;
         }
 
         footer {
@@ -98,7 +123,11 @@
         </ul>
     </nav>
 
-    <p>Thank you for subscribing!</p>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Blog Posts</h1>
+        <p>I will publish blog posts soon (and feel free to yell at me if I don't publish anything by the end of January)</p>
+    </div>
 
     <!-- Footer -->
     <footer>
