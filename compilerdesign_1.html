@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiler Design (1)</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
+    <style>
+        /* General Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #eaeaea;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #555555;
+            transform: scale(1.05);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            margin: 1em 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f8f8f8;
+            border-top: 1px solid #eaeaea;
+            color: #555555;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .content {
+                padding: 0 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Compiler Design (1)</h1>
+        <h2>Why Compilers Are Inherently Cool</h2>
+
+        <p><i>Last Edited: Jan 19, 2025</i></p>
+        <p style="text-align: justify;">
+            At first glance, compilers may not seem very compilcated. After all, they are just programs that translate your 
+            C code (or another language, although some languages use an interpreter instead of a compiler) into an 
+            assembly language file, and then machine code (0s and 1s). A compiler serves as a translator, but it is 
+            not as if you are translating from English to Mandarin. C itself is already a programming language, just not binary. 
+            Unfortunately, compilers are much more complicated than this! In my computer systems class, we spent 
+            the first few months learning about how the x86-64 instruction set works<sup><a href="#note1">1</a></sup>. The assembly 
+            language is considered low-level because assembly code can be directly translated into machine code — 
+            it's a one-to-one match. All the cool stuff in C (and most other high-level programming languages), like 
+            data types, variable names, multidimensional arrays, and for loops disappear in assembly. For instance, 
+            variables don't have predefined data types in assembly. Consequently, things are interpreted quite flexibly; 
+            you read the last four bytes when the variable is an integer, eight when it is a double, and so on. All the for 
+            loops get wiped out, and instead you see a bunch of jump statements<sup><a href="#note2">2</a></sup>. Half the questions on 
+            my final exam involved translating C code into assembly, and for compilers to do this based on just a piece of C code, 
+            and no AI assistance, is a daunting task. It certainly sounds like a bunch of if-else statements, but compilers employ a 
+            crazy level of optimization in the process on top of everything. If there is enough interest, I can give a more solid walkthrough 
+            of how C to assembly works. Regardless, you should get the overall feel by now.
+        </p>
+        <p style="text-align: justify;">
+            <a href="https://en.wikipedia.org/wiki/Compiler#Three-stage_compiler_structure">Wikipedia</a> tells me that the overall 
+            compiling process goes through three phases: the front, the middle, and back ends. 
+            Over the next few days/weeks, I will be exploring each phase in detail. More specifically:
+        </p>
+        <ul>
+            <li>Front end: lexical analysis, syntax analysis, and semantic analysis</li>
+            <li>Middle end: analysis and optimization</li>
+            <li>Final end: code generation</li>
+        </ul>
+            
+        <hr>
+        <p class="footnotes">
+            <small>
+                <sup id="note1">1</sup> x86-64 is a kind of instruction set architecture, which defines how software controls the CPU - a 
+                combination of instructions, registers, managing memory, etc<br>
+                <sup id="note2">2</sup> Jump statements are the equivalent of goto statements in C. Even in C, goto statements are not 
+                recommended because of how messy your code gets with nested loops.
+            </small>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+</body>
+</html>
