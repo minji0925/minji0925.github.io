@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Running App</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
+    <style>
+        /* General Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #eaeaea;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #555555;
+            transform: scale(1.05);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            margin: 1em 0; /* Space between paragraphs */
+            line-height: 1.7; /* Comfortable line spacing */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f8f8f8;
+            border-top: 1px solid #eaeaea;
+            color: #555555;
+        }
+
+        .page-nav {
+            margin: 2em 0;
+            padding: 1em;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+
+        .page-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .page-nav li {
+            margin: 0.5em 0;
+        }
+
+        .page-nav a {
+            text-decoration: none;
+            color: #333333;
+            transition: color 0.3s ease;
+        }
+
+        .page-nav a:hover {
+            color: #555555;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .content {
+                padding: 0 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Building a Running App</h1>
+        <h2>My motivations, a road map, and progress updates</h2>
+        <i>The important things are in the road map; read the first and last sections for entertainment</i>
+
+        <p><i>Last Edited: Jan 25, 2025</i></p>
+
+        <!-- Page Navigation -->
+        <div class="page-nav">
+            <ul><i>
+                <li><a href="#motivations">Motivations</a></li>
+                <li><a href="#roadmap">Road map</a></li>
+                <li><a href="#progress">Progress updates</a></li></i>
+            </ul>
+        </div>
+
+        <br>
+        <h3 id="motivations">Motivations - a rant about my running journey</h3>
+        <p>
+            I started running sometime during covid, when I realized I needed to exercise more but was tired of treadmills and 
+            home workouts. (Unfortunately, I still hate everything gym/fitness related; I’ll do a dare if you can make me 
+            enjoy doing gym workouts) My running was mediocre or worse; I could barely run a mile even when half of that was 
+            downhill. I learned everything from scratch, but I managed to improve significantly over a year when I hit the 
+            5km mark. Unfortunately, I hit a wall after that. I dreaded those Saturday mornings when I knew I had to run 5km 
+            in the afternoon. I made it a weekly routine because I knew that I would not be able to run another 5km if I skipped 
+            too many weeks. My 5km pace improved from 33 minutes to 27 minutes, but it was nowhere near ‘good running distance’. <br>
+            Two things happened. First, I started searching for fresh running routes that could ignite my motivation. I actively looked for 
+            longer routes with 
+            fewer slopes and better scenery. Two, a friend advised me to maintain my heart rate in the 160s; start slow, and fasten my pace 
+            after a few kilometers. I’d seen this on YouTube before, but I was not able to fathom its true meaning until then. So now, I’ve 
+            been doing 5-9km runs every two days, sacrificing my pace for a longer distance (for now). <br>
+            My running journey as a not-very-athletic but enthusiastic person was rocky at best, but it worked out. I’ve learned to genuinely 
+            enjoy running, 
+            and it’s substantially improved my life (and my sleep!). I realized that everyone can start running - and continue running - with the right 
+            guidance and motivation, which is why I decided to start this project. <br>
+            Building a solid, all-in-one running app has been running in the back of my mind for years. I have used a few running apps 
+            before, but they don’t have the things I <i>really</i> need. Take Nike Run Club for instance. (Does Nike Run Club have that much 
+            of an incentive to build a good running app? They don’t profit from this in the first place - there are no in-app purchases, 
+            so I suspect it’s mostly for the brand image.) They only track essential information like heart rate and cadence, and the guided 
+            runs are not very flexible. No route planning, just GPS tracking. Frankly speaking, my testimony for the other apps isn’t as credible, 
+            since not many of them are available/widely used in Korea. I can’t say much for Strava, inarguably the most popular sports app, since 
+            I haven’t used the pro features, but I can say that the route recommendations based on the heat map are not particularly high-quality, 
+            in Seoul or regions with relatively few runners; it suggested a hiking path. <br>
+            So my end goal is a running app that analyzes every bit of the user’s running data, gives ‘good’ route recommendations, and supports 
+            route navigation/guided runs with real-time adjustments. I’ll give a more detailed explanation in the next section.
+        </p>
+        <i><b>A short ‘Why am I writing this?’</i></b>
+        <p>
+            I honestly need to put all my thoughts in one place. More importantly, to receive advice/feedback from others, 
+            I need a concrete ‘thing’ to send to people that’s not just the source code or my github repository. I <i>hope</i> people 
+            will have the patience to read the whole thing.
+        </p><br>
+
+        <h3 id="roadmap">Road map (road map? roadmap?)</h3>
+        <p>
+            The very bare minimum — even more basic than the MVP — would be route recommendations, 
+            based on user input (starting point, destination, distance). Choose a few waypoints 
+            around the area, generate routes based on that, and feed weather data, map data, and the candidate routes into a fine-tuned gpt model. <br>
+            Something that counts as an MVP would certainly go a bit further than this. Record runs, 
+            gather health stats from Apple watch (I’m working on Android development right now so we 
+            shall see how this works out), and adequately store user data. I need to build a backend server, 
+            design some kind of interface for recording runs, track distance/location, implement account setup, 
+            and give voice announcements every kilometer. Essentially everything that running apps already offer. These should be 
+            a lot easier to code (although it is a long list, so I’m starting to get scared), hopefully, a lot of this is open source 
+            / cursor and gpt 4o mini will do a better job. <br>
+            The next steps would go much further than this, and they are rough sketches of ideas, rather than something I can explain on a 
+            technical level (e.g. I haven’t implemented a graph neural network before; I need to do more research into this). First, fine-tune 
+            a voice assistant to do route navigation + guided runs at the same time, giving real-time route adjustments and pace suggestions. And 
+            gather all the running data from a user to give comprehensive analytics, distance/pace recommendations, and a personalized training plan. 
+            Other things, like implementing all the core algorithms without API assistance would be cool if I had the time. Among other things, I can 
+            use a graph neural network to do route calculations from scratch and train some kind of AI model for data analytics (surely more complicated 
+            than a basic neural network). If I want my mom and friends who don’t run to use this app, I can expand this to walking (walking is the 
+            easier version of running).
+        </p><br>
+
+        <h3 id="progress">Progress updates - hopefully my explanation doesn’t make this all look too easy, otherwise it just makes me a bad programmer</h3>
+        <p>
+            <i>Jan 25:</i> I already have most of ‘the bare minimum’ done except for the fine-tuned gpt model because I don’t have the 
+            api key yet. This took me ~2 weeks, which is a solid start in my opinion. I’ll give a brief illustration of my journey. <br>
+            First and foremost, Android Studio is not fun. Android development isn't as easy as it looks. The Kotlin syntax never ceases 
+            to confuse me. The UI design is a lot more complicated than CSS. I need a way to multithread my app since it crashes every 
+            once in a while. Some functions are different depending on the Android SDK version, which means that ChatGPT may not be perfect. 
+            Plus, it takes too much time to run the whole thing on a virtual machine. (I would genuinely appreciate tips on how to make Android 
+            Studio run faster! Other than getting an SSD, that is) ChatGPT and Cursor have been of immense help though. I would have given up on 
+            debugging midway without these. <br>
+            Now, onto the Google Maps API. The Routes API does not work in Seoul?? Even in Google Maps, if you search for walking routes 
+            from one place to another, Google Maps will refuse to answer. The map, geocoding, latitude/longitude, and waypoints (places API) 
+            are immensely helpful. So I had to switch to Graphhopper API for routing, which seems better. <br>
+            So my overall process right now for routing: 
+        </p>
+        <ul>
+            <li>User input: I successfully implemented the Google Maps Place Autocomplete API but it made the app crash so that's on a hiatus. 
+                For now, it's just the starting point, destination, and desired distance.</li>
+            <li>Geocoding: Latitude/longitude translation</li>
+            <li>Waypoints: Select good nearby waypoints (think of them as points of interest), I have several custom keywords for this.</li>
+            <li>Select a few waypoints at random</li>
+            <li>Come up with a few candidate routes based on the waypoints</li>
+            <li>Feed the routes, weather data, map data, and a system prompt into the OpenAI API</li>
+            <li>Select a route</li>
+        </ul>
+            
+        <hr>
+        <p class="footnotes">
+            I would genuinely appreciate any advice or feedback! Please reach out through email/discord/anything else 
+            on the <a href="contact.html">Contact</a> page.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+</body>
+</html>
