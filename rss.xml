@@ -22,7 +22,15 @@
             <pubDate>Fri, 10 Jan 2025 10:00:00 +0000</pubDate>
             <guid>https://minji0925.github.io/squidgame2.html</guid>
         </item>
+
+        <item>
+            <title>Thoughts from March 2025</title>
+            <link>https://minji0925.github.io/marchreflections.html</link>
+            <description>Thoughts from March 2025</description>
+            <pubDate>Sat, 5 April 2025 10:00:00 +0000</pubDate>
+            <guid>https://minji0925.github.io/marchreflections.html</guid>
+        </item>
         
-        <lastBuildDate>Fri, 10 Jan 2025 12:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 5 April 2025 12:00:00 +0000</lastBuildDate>
     </channel>
 </rss>
