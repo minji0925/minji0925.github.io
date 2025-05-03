@@ -30,7 +30,15 @@
             <pubDate>Sat, 5 April 2025 10:00:00 +0000</pubDate>
             <guid>https://minji0925.github.io/marchreflections.html</guid>
         </item>
+
+        <item>
+            <title>Thoughts from April 2025</title>
+            <link>https://minji0925.github.io/aprilreflections.html</link>
+            <description>Thoughts from April 2025</description>
+            <pubDate>Sat, 3 May 2025 10:00:00 +0000</pubDate>
+            <guid>https://minji0925.github.io/aprilreflections.html</guid>
+        </item>
         
-        <lastBuildDate>Sat, 5 April 2025 12:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 3 May 2025 12:00:00 +0000</lastBuildDate>
     </channel>
 </rss>
