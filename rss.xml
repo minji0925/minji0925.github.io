@@ -38,7 +38,15 @@
             <pubDate>Sat, 3 May 2025 10:00:00 +0000</pubDate>
             <guid>https://minji0925.github.io/aprilreflections.html</guid>
         </item>
+
+        <item>
+            <title>Music Theory Basics for Music Production</title>
+            <link>https://minji0925.github.io/musictheory1.html</link>
+            <description>Thoughts from April 2025</description>
+            <pubDate>Sun, 22 June 2025 12:00:00 +0000</pubDate>
+            <guid>https://minji0925.github.io/musictheory1.html</guid>
+        </item>
         
-        <lastBuildDate>Sat, 3 May 2025 12:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 22 June 2025 12:00:00 +0000</lastBuildDate>
     </channel>
 </rss>
