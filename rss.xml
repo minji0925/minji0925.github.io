@@ -42,11 +42,19 @@
         <item>
             <title>Music Theory Basics for Music Production</title>
             <link>https://minji0925.github.io/musictheory1.html</link>
-            <description>Thoughts from April 2025</description>
+            <description>Music Theory Basics for Music Production</description>
             <pubDate>Sun, 22 June 2025 12:00:00 +0000</pubDate>
             <guid>https://minji0925.github.io/musictheory1.html</guid>
         </item>
+
+        <item>
+            <title>A Brief History of Music Technology</title>
+            <link>https://minji0925.github.io/historyofmusictechnology.html</link>
+            <description>A Brief History of Music Technology</description>
+            <pubDate>Sun, 6 July 2025 12:00:00 +0000</pubDate>
+            <guid>https://minji0925.github.io/historyofmusictechnology.html</guid>
+        </item>
         
-        <lastBuildDate>Sun, 22 June 2025 12:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sun, 6 July 2025 12:00:00 +0000</lastBuildDate>
     </channel>
 </rss>
